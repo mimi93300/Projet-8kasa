@@ -1,21 +1,26 @@
-import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import HomePage from './Pages/Homepage/HomePage';
-import AboutPage from './Pages/About/About';
-import LogementPage from './Pages/Logement/Logement';
-import ErrorPage from './Pages/ErrorPage/ErrorPage';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home/Home";
+import About from "./Pages/About/About";
+import Logement from "./Pages/Logement/Logement";
+import Error from "./Pages/Error/Error";
+
+import Header from "./Layout/Header/Header";
+import Footer from "./Layout/Footer/Footer";
 
 function App() {
-  return (
-    <Router>
-      <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route path="/about" component={AboutPage} />
-        <Route path="/logement" component={LogementPage} />
-        <Route component={ErrorPage} />
-      </Switch>
-    </Router>
-  );
+    return (
+        <BrowserRouter>
+            <Header />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/logement/:id" element={<Logement />} />
+                <Route path="*" element={<Error />} />
+            </Routes>
+            <Footer />
+        </BrowserRouter>
+    );
 }
 
 export default App;
