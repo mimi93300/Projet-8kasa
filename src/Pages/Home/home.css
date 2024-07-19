@@ -1,11 +1,14 @@
-body {
+.home {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 50px;
+    box-sizing: border-box;
+    padding: 0 20px;
     margin: auto;
     max-width: 1440px;
     min-width: 375px;
-}
-
-* {
-    box-sizing: border-box;
     font-family: Montserrat, sans-serif;
 }
 
@@ -20,19 +23,6 @@ body {
     border-radius: 25px;
 }
 
-.main {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    gap: 50px;
-    box-sizing: border-box;
-    padding: 0 20px;
-
-}
-
-
-
 @media (max-width: 1200px) {
     .cardsContainer {
         grid-template-columns: repeat(2, 1fr);
@@ -40,7 +30,7 @@ body {
 }
 
 @media (max-width: 768px) {
-    .main {
+    .home {
         gap: 25px;
     }
 

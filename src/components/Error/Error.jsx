@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import './error.css';
 
-function error() {
+function Error() {
   return (
 
       <div className="error-page">
@@ -16,4 +16,4 @@ function error() {
   )
 }
 
-export default error
+export default Error

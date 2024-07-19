@@ -1,5 +1,14 @@
 .footer {
-    align-items: center;
-    display: flex;
-    justify-content: center;
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+    min-height: 100px;
+}
+
+.footer img {
+    margin-top: 10px;
+}
+
+.footer p {
+    color: #fff;
 }
