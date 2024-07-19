@@ -1,14 +1,14 @@
-.footer {
+footer {
     background-color: #000000;
     padding: 20px;
     text-align: center;
     min-height: 100px;
 }
 
-.footer img {
+footer img {
     margin-top: 10px;
 }
 
-.footer p {
+footer p {
     color: #fff;
 }

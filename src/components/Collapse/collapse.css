@@ -1,0 +1,58 @@
+.collapse__panel {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .collapse__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+    height: 54px;
+    border-radius: 5px;
+    padding: 10px 20px 10px 15px;
+    background: #ff6060;
+    color: white;
+    cursor: pointer; /* Ajouté pour indiquer que l'élément est cliquable */
+  }
+  
+  .collapse__header span {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  .collapse__header i {
+    color: white;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .collapse__content {
+    display: none;
+    z-index: 1;
+    border-radius: 5px;
+    background: rgb(246, 246, 246);
+    background: linear-gradient(
+      90deg,
+      rgba(246, 246, 246, 1) 75%,
+      rgba(246, 246, 246, 0.45281862745098034) 100%
+    );
+    padding: 20px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    transition: max-height 0.5s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+  }
+  
+  .collapse__content.visible {
+    display: block;
+    max-height: 500px; /* Ajustez cette valeur en fonction de votre contenu */
+  }
+  
+  .rotate {
+    transform: rotate(-180deg);
+  }
+  

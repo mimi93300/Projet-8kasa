@@ -1,6 +1,6 @@
 .banner {
     position: relative;
-    max-width: 100%;
+    max-width: 1240px;
     height: 150px;
     display: grid;
     margin: auto;
@@ -16,18 +16,22 @@
     margin-top: 50px;
     position: absolute;
     border-radius: 20px;
+    opacity: 0.6; 
+    mix-blend-mode: darken;
 }
 
 h1 {
     position: relative;
     font-size: xxx-large;
     display: flex;
-    font-weight: 500;
     color: #fff;
     width: 100%;
     align-items: center;
     justify-content: center;
     height: 264px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
 }
 
 /* RESPONSIF */

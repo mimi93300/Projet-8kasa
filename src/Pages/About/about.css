@@ -1,1 +1,18 @@
-
+#root .about__container {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+  
+  about .collapse {
+    max-width: 1023px;
+  }
+  @media (max-width: 768px) {
+    about {
+      gap: 25px;
+    }
+  }

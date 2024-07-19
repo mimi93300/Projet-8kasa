@@ -1,7 +1,5 @@
 .card {
     position: relative;
-    -webkit-animation: fadeInUp .6s ease-in-out;
-    animation: fadeInUp .6s ease-in-out;
     border-radius: 10px;
     height: 255px;
     margin-bottom: 20px;
@@ -30,11 +28,22 @@
 
 .card h2 {
     position: absolute;
-    bottom: 20px; /* Adjusted for better positioning */
-    left: 20px; /* Adjusted for better positioning */
+    bottom: 10px; 
+    left: 20px;
     color: #fff;
     font-size: 18px;
     font-weight: 500;
     line-height: 1.4;
-    z-index: 1; /* Increased z-index to place text above overlay */
+    z-index: 1; 
+}
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+    .card img {
+        
+    }
+
+    .card {
+        gap: 22px; 
+    }
 }
