@@ -1,0 +1,42 @@
+.home__gallery {
+    background: #F6F6F6; /* Remplacé $grid-background par #F6F6F6 */
+    min-height: 50vh;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 2.5rem;
+}
+
+@media only screen and (max-width: 870px) {
+    .home__gallery {
+        gap: 40px;
+    }
+}
+
+.home__gallery > a {
+    width: 30%;
+}
+
+/* Mobile */
+@media only screen and (max-width: 798px) {
+    .home__gallery {
+        display: flex;
+        justify-content: center;
+        background: none;
+        padding: 0;
+        border-radius: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .home__gallery > a {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .card__image {
+        height: 250px;
+    }
+}

@@ -1,58 +1,94 @@
 .collapse__panel {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  .collapse__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    z-index: 5;
-    height: 54px;
-    border-radius: 5px;
-    padding: 10px 20px 10px 15px;
-    background: #ff6060;
-    color: white;
-    cursor: pointer; /* Ajouté pour indiquer que l'élément est cliquable */
-  }
-  
-  .collapse__header span {
-    font-size: 24px;
-    font-weight: 700;
-  }
-  
-  .collapse__header i {
-    color: white;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  .collapse__content {
-    display: none;
-    z-index: 1;
-    border-radius: 5px;
-    background: rgb(246, 246, 246);
-    background: linear-gradient(
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+}
+
+.collapse__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 5;
+  height: 58px;
+  width: 70%; /* Valeur par défaut pour les écrans plus grands */
+  border-radius: 5px;
+  padding: 10px 20px 10px 15px;
+  background: #ff6060;
+  color: white;
+  cursor: pointer; /* Indique que l'élément est cliquable */
+}
+
+.collapse__header span {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.collapse__header i {
+  color: white;
+  transition: transform 0.5s ease-in-out;
+}
+
+.collapse__content {
+  display: none;
+  z-index: 1;
+  border-radius: 5px;
+  background: rgb(246, 246, 246);
+  background: linear-gradient(
       90deg,
       rgba(246, 246, 246, 1) 75%,
       rgba(246, 246, 246, 0.45281862745098034) 100%
-    );
-    padding: 20px;
-    font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
-    transition: max-height 0.5s ease-in-out;
-    max-height: 0;
-    overflow: hidden;
+  );
+  padding: 20px;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  transition: max-height 0.5s ease-in-out;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.collapse__content.visible {
+  display: block;
+  max-height: 500px; /* Ajustez cette valeur en fonction de votre contenu */
+  width: 1023px;
+}
+
+.rotate {
+  transform: rotate(-180deg);
+}
+
+/* Définit la taille de la police pour les écrans dont la largeur est inférieure ou égale à 768px */
+@media only screen and (max-width: 768px) {
+  body {
+      font-size: 13px;
   }
-  
-  .collapse__content.visible {
-    display: block;
-    max-height: 500px; /* Ajustez cette valeur en fonction de votre contenu */
+
+  .collapse__header {
+      width: 100%; /* La largeur du header passe à 100% pour les petits écrans */
   }
-  
-  .rotate {
-    transform: rotate(-180deg);
+
+  .collapse__panel {
+      margin: 0;
   }
-  
+}
+
+.collapse__header span {
+  padding-left: 15px;
+}
+
+.collapse__content {
+  border-radius: 5px; /* Assurez-vous que le border-radius est bien spécifié */
+}
+
+.collapse__content.visible {
+  width: 100%;
+}
+
+.fa-chevron-down,
+.fa-chevron-up {
+  font-size: 22px;
+  cursor: pointer;
+  color: white;
+}
