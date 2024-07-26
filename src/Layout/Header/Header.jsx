@@ -30,3 +30,5 @@ export default function Header() {
     </header>
   );
 }
+
+//NavLink est utilisé pour créer un lien vers la page d'accueil ("/")

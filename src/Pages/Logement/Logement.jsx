@@ -6,6 +6,7 @@ import logements from "../../data/data.json";
 import { SlideShow } from '../../components/SlideShow/SlideShow';
 import LogementHeader from "../../components/LogementHeader/LogementHeader"; 
 import Error from "../Error/Error"; 
+import './logement.css';
 
 export default function Logement() {
     const { id } = useParams(); // Utiliser useParams pour extraire l'ID de l'URL
