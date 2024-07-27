@@ -1,5 +1,5 @@
 .logement-page {
-    color: #FF6060; /* Couleur primaire remplacée */
+    color: #FF6060; 
     font-family: "Montserrat", sans-serif;
     font-weight: normal;
     padding-top: 5%;
@@ -10,9 +10,6 @@
 }
 
 
-.logement-page h1 {
-    font-size: 3rem;
-}
 
 .collapse__header {
     display: flex;
@@ -42,8 +39,43 @@
 /* Mobile */
 @media only screen and (max-width: 768px) {
     .logement__description__collapse {
+        padding-bottom: 25px;
         flex-direction: column;
         gap: 0.3rem;
     }
+
+    
+        .logement-page {
+            padding-left: 5%;
+            width: 100%;
+       
+    }
+
+    .collapse__header {
+        width: 100%;
+    }
+
+    .collapse__header span {
+        padding-left: 10px;
+        font-size: 0.8rem;
+    }
+
+    .collapse__header i {
+        padding-right: 25px;
+        font-size: 0.8rem;
+    }
+}
+
+/* Pour les mobiles */
+@media (max-width: 480px) {
+    .logement-page {
+        padding-left: 3%;
+        width: 100%;
+    }
+
+    .logement-page h1 {
+        font-size: 1rem; 
+    }
+
 }
 

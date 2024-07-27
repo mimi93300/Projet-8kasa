@@ -28,14 +28,14 @@
 }
 
 .apartment__owner__stars .on {
-    color: #FF6060; /* Couleur primaire remplacée */
+    color: #FF6060; 
 }
 
 .apartment__title h1 {
     font-weight: 500;
     margin-block: 0;
     font-size: 36px;
-    color: #FF6060; /* Couleur primaire remplacée */
+    color: #FF6060; 
     display: contents;
 }
 
@@ -61,14 +61,13 @@
 }
 
 .apartment__tags span {
-    background-color: #FF6060; /* Couleur primaire remplacée */
-    color: #fff; /* Couleur tertiaire remplacée */
+    background-color: #FF6060; 
+    color: #fff; 
     padding: 0.2em 1em;
     border-radius: 0.5rem;
 }
 
 /* Mobile */
-
 @media only screen and (max-width: 1005px) {
     .apartment__title h1 {
         font-size: 23px;
@@ -138,3 +137,4 @@
         font-size: 10px;
     }
 }
+
