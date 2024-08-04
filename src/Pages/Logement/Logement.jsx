@@ -17,15 +17,17 @@ export default function Logement() {
     }
 
     return (
-        <div className='logement-page'>
-            {chooseAppartment && <SlideShow pictures={chooseAppartment.pictures} numberPhotos={chooseAppartment.pictures.length} />}
-            <LogementHeader chooseAppartment={chooseAppartment} />
-            <div className='logement__description__collapse'>
-                <Collapse title="Description" content={chooseAppartment.description} />
-                <Collapse title="Équipements" content={chooseAppartment.equipments.map((equipment, index) => (
-                    <li key={index}>{equipment}</li> // Utiliser equipment au lieu de equipments pour correspondre à la variable
-                ))} />
+        <main>
+            <div className='logement-page'>
+                {chooseAppartment && <SlideShow pictures={chooseAppartment.pictures} numberPhotos={chooseAppartment.pictures.length} />}
+                <LogementHeader chooseAppartment={chooseAppartment} />
+                <div className='logement__description__collapse'>
+                    <Collapse title="Description" content={chooseAppartment.description} />
+                    <Collapse title="Équipements" content={chooseAppartment.equipments.map((equipment, index) => (
+                        <li key={index}>{equipment}</li> // Utiliser equipment au lieu de equipments pour correspondre à la variable
+                    ))} />
+                </div>
             </div>
-        </div>
+        </main>
     );
 }

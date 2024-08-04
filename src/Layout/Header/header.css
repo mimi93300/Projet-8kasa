@@ -3,7 +3,8 @@ header {
   justify-content: space-between;
   align-items: center;
   max-width: 1240px;
-  margin: 0 auto;
+  margin: 40px auto;
+  padding: 0 50px 0 50px;
 }
 header img {
   width: 210px;
