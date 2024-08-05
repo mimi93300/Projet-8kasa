@@ -5,6 +5,7 @@ import Card from "../../components/Card/Card";
 import logements from "../../data/data.json";
 import img from "../../assets/banner.png";
 import Collapse from "../../components/Collapse/Collapse";
+import './about.css';
 
 export default function About() {
   return (

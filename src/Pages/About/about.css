@@ -1,18 +1,51 @@
 #root .about__container {
-    display: flex;
-    gap: 50px;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 0 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 4%;
+  gap: 30px; 
 }
-  
-  about .collapse {
-    max-width: 1023px;
+
+@media (max-width: 480px) {
+  #root .about__container {
+    padding-left: 0;
+    padding-right: 0;
   }
-  @media (max-width: 768px) {
-    about {
-      gap: 25px;
-    }
+}
+
+.collapse__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 5;
+  height: 58px;
+  width: 100%;
+  border-radius: 5px;
+  background: #ff6060;
+  color: white;
+  cursor: pointer;
+  /* Indique que l'élément est cliquable */
+}
+
+@media (min-width: 1024px) {
+  .about__container {
+    padding-left: 0;
+    padding-right: 0;
   }
+}
+
+
+about .collapse {
+  max-width: 1023px;
+}
+
+@media (max-width: 768px) {
+  about {
+    gap: 25px;
+  }
+}

@@ -22,10 +22,10 @@
   align-items: center;
   position: relative;
   z-index: 5;
-  height: 58px;
-  width: 70%; /* Valeur par défaut pour les écrans plus grands */
+  width: 100%;
   border-radius: 5px;
   padding: 10px 20px 10px 15px;
+  margin: 0;
   background: #ff6060;
   color: white;
   cursor: pointer; /* Indique que l'élément est cliquable */
@@ -62,7 +62,8 @@
 .collapse__content.visible {
   display: block;
   max-height: 500px; /* Ajustez cette valeur en fonction de votre contenu */
-  width: 80%
+  width: 100%;
+  margin: 0;
 }
 
 .rotate {

@@ -30,27 +30,9 @@ h1 {
 }
 
 /* RESPONSIF */
-@media only screen and (max-width: 1240px) {
-    h1 {
-        height: 200px;
-        font-size: xxx-large;
-        font-weight: 500;
-    }
-
-    .banner {
-        margin-bottom: 6rem;
-    }
-}
-
 @media only screen and (max-width: 1024px) {
     h1 {
         font-size: xx-large;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    h1 {
-        align-items: center;
     }
 }
 
@@ -67,8 +49,7 @@ h1 {
 
     h1 {
         align-items: center;
-        font-size: xx-large;
-        margin-top: 70px;
+        font-size: x-large;
     }
 
     .banner__text {
@@ -92,9 +73,7 @@ h1 {
     }
 
     h1 {
-        margin-left: 45px;
-        font-size: large;
+        font-size: smaller;
         border-radius: 5px;
-        width: 62%;
     }
 }
