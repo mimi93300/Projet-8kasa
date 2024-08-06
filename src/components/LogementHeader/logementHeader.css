@@ -1,3 +1,51 @@
+/* Styles pour les panneaux de collapse */
+.collapse__container {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux panneaux de passer à la ligne si nécessaire */
+    gap: 1rem; /* Espacement entre les panneaux */
+}
+
+.collapse__panel {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Prend toute la largeur disponible en petit écran */
+    max-width: 600px; /* Ajuste selon la largeur souhaitée pour chaque panneau */
+}
+
+/* Styles pour le header et le contenu du panneau */
+.collapse__header {
+    display: flex;
+    justify-content: space-between; /* Aligne les éléments du header */
+    align-items: center;
+    cursor: pointer;
+    background: #ff6060;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    width: 100%; /* Assure que le header prend toute la largeur du panneau */
+}
+
+.collapse__content {
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    max-height: 0;
+    opacity: 0;
+    background: #f9f9f9;
+    padding: 10px 15px;
+    border-radius: 0 0 5px 5px;
+}
+
+.collapse__content.visible {
+    max-height: 1000px; /* Ajuste selon le contenu */
+    opacity: 1;
+}
+
+.collapse__content.hidden {
+    max-height: 0;
+    opacity: 0;
+}
+
+/* Styles pour les éléments existants */
 .apartment__header {
     display: flex;
     margin-bottom: 1rem;
@@ -10,6 +58,7 @@
 .apartment__owner__details {
     display: flex;
     gap: 0.5rem;
+    justify-content: flex-end;
 }
 
 .apartment__owner__badge img {
@@ -25,17 +74,18 @@
     align-items: center;
     font-size: 2rem;
     color: rgb(220, 220, 220);
+    gap: 4px;
 }
 
 .apartment__owner__stars .on {
-    color: #FF6060; 
+    color: #FF6060;
 }
 
 .apartment__title h1 {
     font-weight: 500;
     margin-block: 0;
     font-size: 36px;
-    color: #FF6060; 
+    color: #FF6060;
     display: contents;
 }
 
@@ -61,8 +111,8 @@
 }
 
 .apartment__tags span {
-    background-color: #FF6060; 
-    color: #fff; 
+    background-color: #FF6060;
+    color: #fff;
     padding: 0.2em 1em;
     border-radius: 0.5rem;
 }
@@ -76,6 +126,14 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .collapse__container {
+        flex-direction: column; /* Aligne les panneaux en colonne sur petits écrans */
+    }
+
+    .collapse__panel {
+        width: 100%; /* Chaque panneau prend toute la largeur disponible */
+    }
+
     .apartment__header {
         flex-direction: column;
         gap: 1rem;
@@ -128,13 +186,5 @@
 }
 
 @media only screen and (max-width: 480px) {
-    .apartment__title h1 {
-        font-size: 18px;
-        padding-bottom: 0.3rem;
-    }
-
-    .apartment__tags span {
-        font-size: 10px;
-    }
-}
-
+    .collapse__header {
+        padding: 6px 10px; /* Ajustement pour

@@ -17,6 +17,11 @@ nav ul {
   margin: 0;
   padding: 0;
 }
+
+nav ul a.active {
+  text-decoration: underline;
+ }
+
 nav li {
   list-style: none;
   font-family: 'Montserrat', sans-serif;

@@ -1,49 +1,56 @@
+/* card.css */
 .card {
-    position: relative;
-    border-radius: 10px;
-    height: 255px;
-    margin-bottom: 20px;
-    overflow: hidden;
-    width: 100%;
+  position: relative;
+  border-radius: 10px;
+  height: 255px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  width: 100%;
+  cursor: pointer;
+  display: block; /* Assure que la carte prend la pleine largeur disponible et est traitée comme un bloc */
+  text-decoration: none; /* Évite la décoration du texte par défaut du lien */
 }
 
+/* Applique les styles de superposition à l'élément avant */
 .card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(hsla(0, 0%, 100%, 0), rgba(0, 0, 0, 0.5));
-    border-radius: 10px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)); /* Superposition plus sombre */
+  border-radius: 10px;
+  z-index: 0;
 }
 
+/* Styles pour l'image de la carte */
 .card img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  z-index: 0; /* Assure que l'image est derrière le texte et l'overlay */
 }
 
+/* Styles pour le titre de la carte */
 .card h2 {
-    position: absolute;
-    bottom: 10px; 
-    left: 20px;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.4;
-    z-index: 1; 
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  z-index: 1;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Ombre portée pour améliorer la lisibilité */
 }
+
 
 /* Mobile */
 @media only screen and (max-width: 768px) {
-    .card img {
-        
-    }
-
-    .card {
-        gap: 22px; 
-    }
+  .card {
+    gap: 22px;
+  }
 }

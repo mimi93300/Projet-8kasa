@@ -4,10 +4,9 @@
   flex-direction: column;
   width: 100%;
   box-sizing: border-box;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-bottom: 4%;
-  gap: 30px; 
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 3%;
 }
 
 @media (max-width: 480px) {
@@ -17,7 +16,7 @@
   }
 }
 
-.collapse__header {
+.about__container .collapse__header {
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -7,8 +7,6 @@
     box-sizing: border-box;
     padding: 0 20px;
     margin: auto;
-    /*max-width: 1440px;*/
-    /*min-width: 375px;*/
     font-family: Montserrat, sans-serif;
 }
 
@@ -18,7 +16,6 @@
     column-gap: 2rem;
     row-gap: 2rem;
     padding: 50px 50px;
-    /*max-width: 1240px;*/
     background: #f6f6f6;
     border-radius: 25px;
 }

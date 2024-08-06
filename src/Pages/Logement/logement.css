@@ -1,33 +1,10 @@
 .logement-page {
     color: #FF6060; 
-    font-family: "Montserrat", sans-serif;
     font-weight: normal;
     padding-top: 5%;
-    padding-left: 6%;
     flex-direction: column;
     display: flex;
-    width: 1240px;
-}
-
-
-
-.collapse__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    z-index: 5;
-    height: 58px;
-    width: 80%;
-    border-radius: 5px;
-    padding: 10px 20px 10px 15px;
-    background: #ff6060;
-    color: white;
-    cursor: pointer;
-}
-
-.collapse__header span {
-    padding: 0;
+    padding: 0 50px 30px 50px;
 }
 
 .logement__description__collapse {
@@ -36,7 +13,6 @@
     margin-top: 15px;
 }
 
-/* Mobile */
 @media only screen and (max-width: 768px) {
     .logement__description__collapse {
         padding-bottom: 25px;
@@ -44,38 +20,18 @@
         gap: 0.3rem;
     }
 
-    
-        .logement-page {
-            padding-left: 5%;
-            width: 100%;
-       
-    }
-
-    .collapse__header {
-        width: 100%;
-    }
-
-    .collapse__header span {
-        padding-left: 10px;
-        font-size: 0.8rem;
-    }
-
-    .collapse__header i {
-        padding-right: 25px;
-        font-size: 0.8rem;
-    }
-}
-
-/* Pour les mobiles */
-@media (max-width: 480px) {
     .logement-page {
-        padding-left: 3%;
+        padding-right: 7%;
+        padding-left: 7%;
+        padding-bottom: 0;
         width: 100%;
     }
-
-    .logement-page h1 {
-        font-size: 1rem; 
-    }
-
 }
 
+@media only screen and (max-width: 480px) {
+    .logement-page {
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+    }
+}

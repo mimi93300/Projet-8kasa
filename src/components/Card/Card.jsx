@@ -5,12 +5,10 @@ import './card.css';
 
 export default function Card({ location }) {
   return (
-    <article className="card">
-    <Link to={"/logement/" + location.id} key={"" + location.id}>
-        <img src={location.cover} alt={location.title} />
-        <h2>{location.title}</h2>
+    <Link to={"/logement/" + location.id} className="card">
+      <img src={location.cover} alt={location.title} className="card__image" />
+      <h2 className="card__title">{location.title}</h2>
     </Link>
-    </article>
   );
 }
 
