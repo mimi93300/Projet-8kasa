@@ -1,4 +1,3 @@
-// Collapse.jsx
 import React, { useState } from 'react';
 import './collapse.css';
 
@@ -19,7 +18,15 @@ const Collapse = (props) => {
         <i className={`fas fa-chevron-up ${chevronClass}`}></i>
       </p>
       <div className={contentClass}>
-        {props.content}
+        {Array.isArray(props.content) ? (
+          <ul>
+            {props.content.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        ) : (
+          <p>{props.content}</p>
+        )}
       </div>
     </div>
   );

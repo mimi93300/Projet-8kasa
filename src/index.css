@@ -10,10 +10,15 @@ main {
   margin: 0 auto;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   main {
-    padding: 20px 20px 0px 20px;
+      padding: 20px 20px 0px 20px;
   }
+
+  /* Exception pour le conteneur .logement-page */
+  .logement-page {
+    padding: 0; /* Ajuste ou supprime le padding pour .logement-page */
+}
 }
 
 * {

@@ -5,12 +5,13 @@
     gap: 1rem; /* Espacement entre les panneaux */
 }
 
-.collapse__panel {
+.logement__description__collapse .collapse__panel {
     display: flex;
     flex-direction: column;
     width: 100%; /* Prend toute la largeur disponible en petit écran */
     max-width: 600px; /* Ajuste selon la largeur souhaitée pour chaque panneau */
 }
+
 
 /* Styles pour le header et le contenu du panneau */
 .collapse__header {
@@ -23,6 +24,7 @@
     padding: 10px 15px;
     border-radius: 5px;
     width: 100%; /* Assure que le header prend toute la largeur du panneau */
+    margin: 0;
 }
 
 .collapse__content {
@@ -38,6 +40,10 @@
 .collapse__content.visible {
     max-height: 1000px; /* Ajuste selon le contenu */
     opacity: 1;
+}
+
+.collapse__content.visible li {
+    list-style-type: none; /* Supprime les puces */
 }
 
 .collapse__content.hidden {

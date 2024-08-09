@@ -58,14 +58,11 @@ nav a:hover {
     line-height: 17.11px;
   }
 }
-@media (max-width: 600px) { 
+@media (max-width: 768px) { 
   nav li {
-    font-size: 12px;
+    font-size: 18px;
     line-height: 17.11px;
   }
-}
-
-@media (max-width: 480px) {
   header {
     padding: 20px 20px 0px 20px;
   }
